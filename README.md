@@ -1,7 +1,7 @@
 Alpine Orcas (Oracle adaptive schemas) Docker image
 ===================================================
 
-This image is based on Alpine GNU C library image ([cosmomill/alpine-glibc](https://hub.docker.com/r/cosmomill/alpine-glibc/)), which is only a 5MB image, and provides a docker image for [Orcas](http://opitzconsulting.github.io/orcas/) (Oracle adaptive schemas).
+This image is based on Alpine GNU C library image ([cosmomill/alpine-gradle](https://hub.docker.com/r/cosmomill/alpine-gradle/)), which is only a 150MB image, and provides a docker image for [Orcas](http://opitzconsulting.github.io/orcas/) (Oracle adaptive schemas).
 
 Prerequisites
 -------------
