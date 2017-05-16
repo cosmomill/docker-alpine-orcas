@@ -1,7 +1,7 @@
 Alpine Orcas (Oracle adaptive schemas) Docker image
 ===================================================
 
-This image is based on Alpine GNU C library image ([cosmomill/alpine-gradle](https://hub.docker.com/r/cosmomill/alpine-gradle/)), which is only a 150MB image, and provides a docker image for [Orcas](http://opitzconsulting.github.io/orcas/) (Oracle adaptive schemas).
+This image is based on Alpine Gradle image ([cosmomill/alpine-gradle](https://hub.docker.com/r/cosmomill/alpine-gradle/)), which is only a 150MB image, and provides a docker image for [Orcas](http://opitzconsulting.github.io/orcas/) (Oracle adaptive schemas).
 
 Prerequisites
 -------------
@@ -29,6 +29,17 @@ $ docker build -t my_app . --build-arg ORACLE_INSTANTCLIENT_FILE="instantclient-
 
 ```sh
 $ docker run -d -P -v orcas_home:/home -e DATABASE_HOSTNAME="db" -e SCHEMA="SCOTT" -e SCHEMA_USERNAME="SCOTT" -e SCHEMA_PASSWORD="TIGER" my_app
+```
+
+The default list of ENV variables is:
+
+```
+DATABASE_HOSTNAME=localhost
+DATABASE_SID=XE
+DATABASE_PORT=1521
+SCHEMA=SCOTT
+SCHEMA_USERNAME=SCOTT
+SCHEMA_PASSWORD=TIGER
 ```
 
 Database Schema files
