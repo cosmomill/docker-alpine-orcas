@@ -74,7 +74,7 @@ ONBUILD RUN bsdtar -C /usr/local/lib -xf /tmp/instantclient-basic-linux.x64-$ORA
 	&& /usr/glibc-compat/sbin/ldconfig
 
 # install Orcas
-ENV APEX_VERSION 5.1.1
+ENV APEX_VERSION 18.1
 ENV APEX_HOME /opt/apex
 ENV ORCAS_GIT_REPOSITORY https://github.com/opitzconsulting/orcas.git
 
@@ -89,7 +89,7 @@ ONBUILD RUN mkdir -p $ORACLE_HOME/oui/jlib \
 	&& chmod 644 $ORACLE_HOME/oui/jlib/classes12.jar \
 	&& rm -f /tmp/classes12.jar
 
-# download and extract APEX 5
+# download and extract APEX
 ONBUILD ADD $APEX_FILE /tmp/
 
 ONBUILD RUN mkdir -p /opt/apex \

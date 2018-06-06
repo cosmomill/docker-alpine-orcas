@@ -10,7 +10,7 @@ If you want to build this image, you will need to download:
 - [Oracle Instant Client for Linux x86-64 (12.2.0.1.0) - Basic Package](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
 - [Oracle Instant Client for Linux x86-64 (12.2.0.1.0) - SQL*Plus](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
 - [Oracle Instant Client for Linux x86-64 (12.2.0.1.0) - JDBC Supplement](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
-- [Oracle Application Express 5.1.1 - All languages](http://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html)
+- [Oracle Application Express 18.1 - All languages](http://www.oracle.com/technetwork/developer-tools/apex/downloads/index.html)
 - [Oracle Database 10g Release 2 (10.2.0.5) JDBC Drivers - classes12.jar](http://www.oracle.com/technetwork/apps-tech/jdbc-10201-088211.html)
 
 
@@ -24,7 +24,7 @@ FROM cosmomill/alpine-orcas
 ```
 
 ```sh
-$ docker build -t my_app . --build-arg ORACLE_INSTANTCLIENT_FILE="instantclient-basic-linux.x64-12.2.0.1.0.zip" --build-arg ORACLE_SQLPLUS_FILE="instantclient-sqlplus-linux.x64-12.2.0.1.0.zip" --build-arg ORACLE_JDBC_FILE="instantclient-jdbc-linux.x64-12.2.0.1.0.zip" --build-arg ORACLE_JDBC12_FILE="classes12.jar" --build-arg APEX_FILE="apex_5.1.1.zip"
+$ docker build -t my_app . --build-arg ORACLE_INSTANTCLIENT_FILE="instantclient-basic-linux.x64-12.2.0.1.0.zip" --build-arg ORACLE_SQLPLUS_FILE="instantclient-sqlplus-linux.x64-12.2.0.1.0.zip" --build-arg ORACLE_JDBC_FILE="instantclient-jdbc-linux.x64-12.2.0.1.0.zip" --build-arg ORACLE_JDBC12_FILE="classes12.jar" --build-arg APEX_FILE="apex_18.1.zip"
 ```
 
 ```sh
